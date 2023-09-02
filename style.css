@@ -5,22 +5,26 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
 }
 
 main {
     font-size: 100%;
-    background: linear-gradient(180deg, rgb(255, 255, 255),rgb(255, 255, 255));
 }
 
 .cabecalho {
     display: flex;
     direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.cabecalho.titulo {
+    margin-left:10px;
 }
 
 .cabecalho-menu {
@@ -29,7 +33,6 @@ main {
 }
 
 .conteudo {
-    margin-bottom: 48px;
     font-family: 'Playfair Display', serif; 
 }
 
@@ -38,13 +41,12 @@ main {
     direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
+    padding: 48px;
 }
 
 .conteudo-principal-escrito {
     display: flex;
     flex-direction: column;
-    gap: 18px;
 }
 
 .conteudo-principal-escrito-supra {
@@ -53,6 +55,7 @@ main {
 
 .conteudo-principal-escrito-titulo {
     font-size: 60px;
+    margin-bottom: 5px;
 }
 
 .conteudo-principal-escrito-botao {
@@ -65,14 +68,42 @@ main {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     font-weight: 500;
+    margin-top: 25px;
 }
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(240,248,255, 0.4);
+}
+
 
 .conteudo-secundario {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-    padding-left: 100px;
+    margin: 30px 100px 30px 100px;
     gap: 40px;
+}
+
+.conteudo-secundario-titulo {
+    margin-bottom:12px;
+}
+
+.conteudo-secundario-sobretitulo {
+    margin-bottom:8px;
+}
+
+
+.conteudo-secundario-habilidades-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:15px;    
+}
+
+.conteudo-secundario-habilidades-container-bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .rodape {
