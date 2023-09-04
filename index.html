@@ -6,108 +6,110 @@
     <meta name="description" content="Físico e cientista de dados">
     <title>Portfólio | Franklin Ferreira</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/fav.png">
     <script src="https://kit.fontawesome.com/2553075676.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="cabecalho">
-        <a class="cabecalho-titulo"> <i class="fa-solid fa-user"></i> <strong>Franklin Ferreira</strong></a>
+        <a class="cabecalho-titulo"> <i class="fa-solid fa-laptop-code"></i> <strong>Franklin Ferreira</strong></a>
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item">Home</a>
-            <a class="cabecalho-menu-item">Sobre mim</a>
-            <a class="cabecalho-menu-item">Habilidades</a>
-            <a class="cabecalho-menu-item">Projetos</a>
-            <a class="cabecalho-menu-item">Contato</a>
-            <a href="#" class="cabecalho-menu-item">Currículo</a>
+            <a href="#sobre" class="cabecalho-menu-item">Sobre mim</a>
+            <a href="#projetos" class="cabecalho-menu-item">Projetos</a>
+            <a href="#contato" class="cabecalho-menu-item">Contato</a>
+            <a href="/assets/curriculo-ds.pdf"><button class="cabecalho-menu-botao">Currículo</button></a>
+        
         </nav>
     </header>
 
     <main class="conteudo">
         
-        <section class="conteudo-principal">
+        <section class="conteudo-principal", id="main">
             <div class="conteudo-principal-escrito">
                 <p class="conteudo-principal-escrito-supra">Olá, eu sou </p>
                 <h1 class="conteudo-principal-escrito-titulo">Franklin Ferreira</h1>
-                <p class="conteudo-principal-escrito-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.</p>
-                <button class="conteudo-principal-escrito-botao">Veja meus projetos</button>
+                <p class="conteudo-principal-escrito-sub">
+                    Resolvo problemas usando dados, estatística e programação.
+                </p>
+                
             </div>
             <img class="conteudo-principal-imagem" src="assets/profile-circle.jpeg" alt="Foto de perfil" width="280px">
         </section>
 
         <div class="conteudo-secundario">
-            <section class="conteudo-secundario-sobre">
+            <section class="conteudo-secundario-sobre", id="sobre">
                 <h2 class="conteudo-secundario-titulo">Sobre mim</h2>
                 <p class="conteudo-secundario-sobre-paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                    Meu nome é Franklin Ferreira, sou pernambucano e apaixonado por aprender coisas novas.
+                    Minha formação se iniciou na licenciatura em Química (UFRPE) onde ganhei gosto por comunicar, ensinar e resolver problemas com tecnologia.
+                    Tive oportunidade de fazer intercâmbio para University of Manchester por um ano, onde tive oportunidade de trabalhar
+                    com o estado da arte da minha área, conhecer outras culturas e aprimorar meu inglês. Decidi me estabelecer na área de
+                    Física computacional, fazendo mestrado na UFRPE e sou atualmente doutorando em Física na UFPE.
+                    Todo esse percurso me deu ferramentas que são importantes para a área de ciência de dados como metodologia científica, cálculo, algébra linear, estatística e programação.
+
                 </p>
             </section><!--FIM DO SOBRE-->
         
-            <section class="conteudo-secundario-projetos">
+            <section class="conteudo-secundario-projetos", id="projetos">
                 <h2 class="conteudo-secundario-titulo">Projetos</h2>
                 <div class="projetos-container">
                     
+                    <a class="projeto-link" href="https://github.com/franklinzppa/diabetes-classification">
                     <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
+                        <img src="assets/diabetes.jpg" width="250px">
+                        <h3>Classificação de diabetes</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                            Projeto end-to-end de classificação utilizando machine learning com o objetivo prever o diagnóstico de diabetes 
+                            a partir um conjunto de informações de saúde de um paciente.
                         </p>
                     </article>
+                    </a>
                     
+                    <a class="projeto-link" href="https://github.com/franklinzppa/renda-censo-regressao">
                     <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
+                        <img src="assets/renda.jpg" width="250px">
+                        <h3>Regressão de renda</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                            Projeto end-to-end de previsão de renda de um grupo familiar baseado em dados do Censo Brasileiro de 2000. 
+                            Utilizei SQL para extração de dados (BigQuery), fiz etapas de pré-processamento, EDA, tratamento de outliers, feature engineering. 
+                            Finalmente, foram desenvolvidos modelos de ML (Random Forest, XGBoost, LGBM) e optimização de hiperparâmetros com bayesian optimization.
                         </p>
                     </article>
+                    </a>
 
+                    <a class="projeto-link" href="https://github.com/franklinzppa/customer-clusterization">
                     <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
+                        <img src="assets/clusterizacao.jpg" width="250px">
+                        <h3>Clusterização de clientes</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                            Projeto de segmentação de clientes utilizando algorítimos de clusterização. 
+                            Usa KMeans e KPrototypes para clusterização e PCA para redução de dimensionalidade.
                         </p>
                     </article>
+                    </a>
 
+                    <a class="projeto-link" href="https://github.com/franklinzppa/spam">
                     <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
+                        <img src="assets/spam.jpg" width="250px">
+                        <h3>Classificador de Spam</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                            Classificador de emails como legítimos (ham) ou falsos (spam) com ferramentas de processamento de linguagem natural (NLP).
+                            O projeto foi dividido em etapas de ETL e modelagem. Na ETL, os dados foram obtidos via requisição, transformados em emails e categorias, e salvos em csv. 
+                            Na modelagem os dados foram pré-processados, analisados (análise de sentimentos, wordcloud, etc) e modelados com machine learning e deep learning.
                         </p>
                     </article>
+                    </a>
 
+                    <a class="projeto-link" href="https://github.com/franklinzppa/ml-models">
                     <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
+                        <img src="assets/ml.jpg" width="250px">
+                        <h3>Modelos de Machine Learning</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
+                            Projeto de reescrita de algoritmos de machine learning para entendimento teórico. 
+                            Entre os modelos descritos estão KNN, regressão linear, árvores de decisão, K-Means e Logistic Regression. 
+                            incluindo  vídeos de explicação dos modelos.
                         </p>
                     </article>
-
-                    <article class="projeto">
-                        <img src="assets/proj1.jpeg" width="250px">
-                        <h3>Título do projeto</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel tincidunt nisl, ut posuere lacus.
-                        </p>
-                    </article>
+                    </a>
 
 
                 </div>
@@ -117,11 +119,15 @@
     </main>
 
     <footer class="rodape">
-        <h2 class="rodape-titulo">Contato</h2>
-        
-        <a class="rodape-item">Linkedin</a>
-        <a class="rodape-item">Github</a>
-        <a class="rodape-item">E-mail</a>
+        <h2 class="rodape-titulo", id="contato">Contato</h2>
+        <ul>
+            <li>
+                <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/franklin-ferreira-filho/" class="rodape-item">Linkedin</a>
+            </li>
+
+            <li><i class="fa-brands fa-github"></i> <a href="https://github.com/franklinzppa" class="rodape-item">Github</a></li>
+        </ul>
+
     </footer>
 </body>
 </html>
