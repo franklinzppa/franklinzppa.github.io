@@ -31,11 +31,13 @@ main {
 }
 
 .cabecalho-menu-item {
+    text-decoration: none;
     color: #000
 }
 
 .cabecalho-menu-item:hover {
-    color:#5b5b5b
+    color:#5b5b5b;
+    text-decoration: underline;
 }
 
 .cabecalho-menu-botao {
