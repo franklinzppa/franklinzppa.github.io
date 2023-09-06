@@ -122,8 +122,11 @@ main {
     gap:15px; 
     min-width: 300px;
     max-width: 300px;
-    text-align: justify;
-    
+    text-align: justify; 
+}
+
+.projeto > h3 {
+    text-align: center;
 }
 
 .projeto:hover {
